@@ -1,2 +1,13 @@
 // For information on how to create your own theme, please refer to:
 // https://ionicframework.com/docs/theming/
+:root {
+  --ion-color-primary: #3880ff;
+  --ion-color-secondary: #3dc2ff;
+  --ion-color-tertiary: #5260ff;
+
+  --ion-background-color: #ffffff;
+  --ion-text-color: #000000;
+
+  --ion-toolbar-background: #ffffff;
+  --ion-toolbar-color: #000000;
+}

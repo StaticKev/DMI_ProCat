@@ -1,5 +1,4 @@
-# Features 
-#### Fixed
+ #### Fixed
 - Login
 - Register
 - User Profile
@@ -9,6 +8,3 @@
 - Favorite
 - User Access Management (Admin)
 - Catalog Management (Admin)
-#### Planned
-- Purchase History
-- Showing relevant items to user

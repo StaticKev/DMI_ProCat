@@ -1,0 +1,88 @@
+// GLOBAL STYLES FOR LOGIN PAGE
+ion-input {
+  --color: #000;
+}
+
+ion-item {
+  border-radius: 8px;
+  margin-bottom: 16px;
+  --border-color: #ddd;
+}
+
+ion-icon {
+  font-size: 24px;
+  margin-right: 8px;
+  color: #666; 
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 24px;
+  
+  h1 {
+    font-weight: bold;
+    color: #000;
+  }
+  p {
+    color: #666;
+  }
+}
+
+// DESKTOP LAYOUT
+.desktop-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 56px;
+}
+
+.desktop-image-container ion-img {
+  max-width: 300px;
+  width: 100%;
+}
+
+.form-container {
+  flex: 1;
+  max-width: 400px;
+}
+
+// MOBILE LAYOUT
+.mobile-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.mobile-image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+
+  ion-img {
+    max-width: 200px;
+    width: 100%;
+  }
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.spacer {
+  flex-grow: 1;
+}
+
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+  
+  span {
+    color: #000;
+  }
+}

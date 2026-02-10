@@ -1,0 +1,115 @@
+<ion-content class="ion-padding" *ngIf="user_os_device === 'desktop'" style="--background: #ffffff;">
+  <div class="desktop-container">
+    <div class="desktop-image-container">
+      <ion-img src="../../../assets/icon/Login-rafiki.png"></ion-img>
+    </div>
+
+    <div class="form-container">
+      <div class="header">
+        <h1><b>Daftar Akun Baru</b></h1>
+        <p>Lengkapi data diri berikut untuk mendaftar</p>
+      </div>
+
+      <form>
+        <ion-item style="--background: #ffffff">
+          <ion-icon slot="start" name="person-outline" color="medium"></ion-icon>
+          <ion-input type="text" label="Nama Lengkap" label-placement="stacked"
+            placeholder="Masukkan nama lengkap"></ion-input>
+        </ion-item>
+
+        <ion-item style="--background: #ffffff">
+          <ion-icon slot="start" name="id-card-outline" color="medium"></ion-icon>
+          <ion-input type="number" label="NIK" label-placement="stacked" placeholder="Masukkan NIK anda"></ion-input>
+        </ion-item>
+
+        <ion-item style="--background: #ffffff">
+          <ion-icon slot="start" name="home-outline" color="medium"></ion-icon>
+          <ion-input type="text" label="Alamat" label-placement="stacked"
+            placeholder="Masukkan alamat anda"></ion-input>
+        </ion-item>
+
+        <ion-item style="--background: #ffffff">
+          <ion-icon slot="start" name="location-outline" color="medium"></ion-icon>
+          <ion-input type="text" label="Asal Kota" label-placement="stacked"
+            placeholder="Masukkan asal kota"></ion-input>
+        </ion-item>
+
+        <ion-item style="--background: #ffffff">
+          <ion-icon slot="start" name="mail-outline" color="medium"></ion-icon>
+          <ion-input type="email" label="Email" label-placement="stacked" placeholder="Masukkan email"></ion-input>
+        </ion-item>
+
+        <ion-item style="--background: #ffffff">
+          <ion-icon slot="start" name="lock-closed-outline" color="medium"></ion-icon>
+          <ion-input type="password" label="Password" label-placement="stacked" placeholder="Buat password"></ion-input>
+        </ion-item>
+
+        <div class="spacer"></div>
+
+        <ion-button expand="block" color="primary" class="ion-margin-top">
+          <ion-label color="light">Daftar</ion-label>
+        </ion-button>
+      </form>
+
+      <div class="register-container">
+        <span>Sudah punya akun?</span>
+        <ion-button fill="clear" color="primary" routerLink="/login" routerDirection="root">Masuk</ion-button>
+      </div>
+    </div>
+  </div>
+</ion-content>
+
+
+<ion-content class="ion-padding" *ngIf="user_os_device === 'mobile'" style="--background: #ffffff;">
+  <div class="mobile-container">
+    <div class="header">
+      <div class="mobile-image-container">
+        <ion-img src="../../../assets/icon/Login-rafiki.png"></ion-img>
+      </div>
+      <h1><b>Daftar Akun Baru</b></h1>
+      <p>Lengkapi data diri berikut untuk mendaftar</p>
+    </div>
+
+    <form class="form-content">
+      <ion-item style="--background: #ffffff">
+        <ion-icon slot="start" name="person-outline" color="medium"></ion-icon>
+        <ion-input type="text" label="Nama Lengkap" label-placement="stacked"
+          placeholder="Masukkan nama lengkap"></ion-input>
+      </ion-item>
+
+      <ion-item style="--background: #ffffff">
+        <ion-icon slot="start" name="id-card-outline" color="medium"></ion-icon>
+        <ion-input type="number" label="NIK" label-placement="stacked" placeholder="Masukkan NIK anda"></ion-input>
+      </ion-item>
+
+      <ion-item style="--background: #ffffff">
+        <ion-icon slot="start" name="home-outline" color="medium"></ion-icon>
+        <ion-input type="text" label="Alamat" label-placement="stacked" placeholder="Masukkan alamat anda"></ion-input>
+      </ion-item>
+
+      <ion-item style="--background: #ffffff">
+        <ion-icon slot="start" name="location-outline" color="medium"></ion-icon>
+        <ion-input type="text" label="Asal Kota" label-placement="stacked" placeholder="Masukkan asal kota"></ion-input>
+      </ion-item>
+
+      <ion-item style="--background: #ffffff">
+        <ion-icon slot="start" name="mail-outline" color="medium"></ion-icon>
+        <ion-input type="email" label="Email" label-placement="stacked" placeholder="Masukkan email"></ion-input>
+      </ion-item>
+
+      <ion-item style="--background: #ffffff">
+        <ion-icon slot="start" name="lock-closed-outline" color="medium"></ion-icon>
+        <ion-input type="password" label="Password" label-placement="stacked" placeholder="Buat password"></ion-input>
+      </ion-item>      
+
+      <ion-button expand="block" color="primary">
+        <ion-label color="light">Daftar</ion-label>
+      </ion-button>
+    </form>
+
+    <div class="register-container">
+      <span>Sudah punya akun?</span>
+      <ion-button fill="clear" color="primary" routerLink="/login" routerDirection="root">Masuk</ion-button>
+    </div>
+  </div>
+</ion-content>

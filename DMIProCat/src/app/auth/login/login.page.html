@@ -1,0 +1,83 @@
+<ion-content class="ion-padding" *ngIf="user_os_device === 'mobile'" style="--background: #ffffff;">
+  <div class="desktop-container">
+    <!-- Bagian kiri: gambar -->
+    <div class="desktop-image-container">
+      <ion-img src="../../../assets/icon/Login-rafiki.png"></ion-img>
+    </div>
+
+    <!-- Bagian kanan: form -->
+    <div class="form-container">
+      <div class="header">
+        <h1><b>Welcome!</b></h1>
+        <p>Enter username and password to login</p>
+      </div>
+      <form>
+        <!-- Email -->
+        <ion-item class="input-item" style="--background: #ffffff">
+          <ion-input labelPlacement="stacked" label="Email" placeholder="email@domain.com" type="email" name="email"
+            required>
+          </ion-input>
+        </ion-item>
+
+        <!-- Password -->
+        <ion-item style="--background: #ffffff">
+          <ion-input type="password" label="Password" label-placement="stacked"
+            placeholder="Enter your password"></ion-input>
+        </ion-item>
+
+        <div class="spacer"></div>
+
+        <ion-button expand="block" color="primary" class="ion-margin-top">
+          <ion-label color="light">Login</ion-label>
+        </ion-button>
+      </form>
+      <div class="register-container">
+        <span>Belum punya akun?</span>
+        <ion-button fill="clear" color="primary" routerLink="/register">Daftar</ion-button>
+      </div>
+    </div>
+  </div>
+</ion-content>
+
+
+<ion-content class="ion-padding" *ngIf="user_os_device === 'desktop'" style="--background: #ffffff;">
+  <div class="mobile-container">
+    <div class="header">
+      <div class="mobile-image-container">
+        <ion-img src="../../../assets/icon/Login-rafiki.png"></ion-img>
+      </div>
+      <h1>Welcome!</h1>
+      <p>Enter username and password to login</p>
+    </div>
+
+    <form class="form-content">
+      <form class="form-content">
+        <!-- Email -->
+        <ion-item class="input-item" style="--background: #ffffff">
+          <ion-input labelPlacement="stacked" label="Email" placeholder="email@domain.com" type="email" name="email"
+            required>
+          </ion-input>
+        </ion-item>
+
+        <!-- Password -->
+        <ion-item style="--background: #ffffff">
+          <ion-input type="password" label="Password" label-placement="stacked"
+            placeholder="Enter your password"></ion-input>
+        </ion-item>
+
+      </form>
+
+
+      <div class="spacer"></div>
+
+      <ion-button expand="block" color="primary">
+        <ion-label color="light">Login</ion-label>
+      </ion-button>
+    </form>
+
+    <div class="register-container">
+      <span>Belum punya akun?</span>
+      <ion-button fill="clear" color="primary" routerLink="/register">Daftar</ion-button>
+    </div>
+  </div>
+</ion-content>

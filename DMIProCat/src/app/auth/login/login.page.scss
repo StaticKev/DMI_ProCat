@@ -1,24 +1,31 @@
 // GLOBAL STYLES FOR LOGIN PAGE
 ion-input {
-  --color: #000; /* teks input */
+  --color: #000;
 }
 
 ion-item {
-  border-radius: 8px; /* bikin sudut input agak membulat */
+  border-radius: 8px;
+  margin-bottom: 16px;
+  --border-color: #ddd;
 }
 
 ion-icon {
-  --color: #333; /* warna icon */
+  font-size: 24px;
+  margin-right: 8px;
+  color: #666; 
 }
 
-.header > h1,
-.header > h2,
-.header > h3,
-.header > h4,
-.header > h5,
-.header > h6,
-.header > p {
-  color: #000000;
+.header {
+  text-align: center;
+  margin-bottom: 24px;
+  
+  h1 {
+    font-weight: bold;
+    color: #000;
+  }
+  p {
+    color: #666;
+  }
 }
 
 // DESKTOP LAYOUT
@@ -31,17 +38,9 @@ ion-icon {
   gap: 56px;
 }
 
-.desktop-image-container,
-.mobile-image-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .desktop-image-container ion-img {
   max-width: 300px;
   width: 100%;
-  height: auto;
 }
 
 .form-container {
@@ -56,10 +55,15 @@ ion-icon {
   height: 100%;
 }
 
-.mobile-image-container ion-img {
-  max-width: 200px;
-  width: 100%;
-  height: auto;
+.mobile-image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+
+  ion-img {
+    max-width: 200px;
+    width: 100%;
+  }
 }
 
 .form-content {
@@ -76,8 +80,9 @@ ion-icon {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.register-container span {
-  color: #000000;
+  margin-top: 16px;
+  
+  span {
+    color: #000;
+  }
 }

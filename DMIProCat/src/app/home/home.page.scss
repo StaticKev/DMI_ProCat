@@ -1,0 +1,116 @@
+ion-label {
+  color: #000000;
+}
+
+ion-label h2,
+ion-label h5,
+.text-content h3,
+.text-content p,
+.text-content h5 {
+  margin: 0;
+}
+
+ion-label p {
+  color: #666666;
+}
+
+ion-content {
+  --background: #ffffff;
+}
+
+ion-item {
+  --background: #ffffff;
+  --color: #333;
+}
+
+.greetings {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.container {
+  width: 100%;
+  margin: 0;
+}
+
+ion-item.membership-card {
+  --padding-start: 0;
+  --padding-end: 0;
+  --inner-padding-start: 0;
+  --inner-padding-end: 0;
+}
+
+.membership-card .container {
+  margin: 0 20px;
+}
+
+.membership-card ion-label {
+  background-color: aqua;
+  padding: 16px;
+  border-radius: 16px;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+// STYLING CARD
+.product-card {
+  width: 150px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(84, 84, 84, 0.08);
+  margin: 0;
+}
+
+.image-wrapper {
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+  background-color: #ffffff;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+ion-card-content {
+  padding: 12px;
+  background: #ffffff;
+}
+
+.product-name {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 0 4px 0;
+  color: #333;
+}
+
+.product-price {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+  color: #000;
+}
+
+.recommend-btn {
+  --background: #ff7a00;
+  --border-radius: 8px;
+  font-size: 12px;
+  height: 28px;
+}
+
+.recommend-section, .lastseen-section {
+  padding: 16px;
+}
+.recommend-slider swiper-slide {
+  width: 150px !important;
+}
+.section-title, .lastseen-title {
+  margin-bottom: 4px;
+  font-size: 16px;
+  color: #333;
+}
